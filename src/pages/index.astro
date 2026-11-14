@@ -1,16 +1,16 @@
 ---
 const exp = [
- {role:'Director of Major Events',org:'Sentry Event Services, Inc.',dates:'Dec 2025 – Present',featured:true,pts:[
+ {role:'Director of Major Events',org:'Sentry Event Services, Inc.',url:'https://sentryeventservices.com',dates:'Dec 2025 – Present',featured:true,pts:[
   'Oversee, coordinate and perform all major event operations company-wide.',
   'Oversee company IT, logistics and fleet operations supporting major events.',
   'Lead Senior Managers for each major event category.',
   'Ensure operational consistency, policy compliance, accurate scheduling, and timely payroll and billing submission.',
   'Serve as key liaison between internal departments and clients.',
   'Accountable for staffing, leadership coverage and operational execution.']},
- {role:'Founder',org:'Vorbix Studios',dates:'Nov 2026 – Present',featured:true,pts:[
+ {role:'Founder',org:'Vorbix Studios',url:'https://vorbixstudios.com',dates:'Nov 2026 – Present',featured:true,pts:[
   'Founded in 2026.',
   'Vorbix Studios works on apps, websites, platforms, games and more — striving to improve with every day, every hour, every program.']},
- {role:'Operations Manager',org:'Sentry Event Services, Inc. (formerly BCM Security Services, Inc.)',dates:'Jan 2025 – Dec 2025',pts:[
+ {role:'Operations Manager',org:'Sentry Event Services, Inc. (formerly BCM Security Services, Inc.)',url:'https://sentryeventservices.com',dates:'Jan 2025 – Dec 2025',pts:[
   'Scheduling and staffing for security and guest service teams; payroll submission.',
   'Budgeting, staffing and post-event spreadsheet analysis and reporting.',
   'Client communication, team leadership and on-site operations.',
@@ -130,7 +130,7 @@ html.js .rv.in{opacity:1;transform:none}
 </section>
 <section id="experience" class="rv"><p class="kick">The road so far</p><h2>Experience</h2>
 <div class="tl">
-{exp.map(e=>(<div class={'it'+(e.featured?' f':'')}><h3>{e.role}</h3><div class="org">{e.org}</div><div class="d">{e.dates}</div>{e.pts.length>0&&<ul>{e.pts.map(p=><li>{p}</li>)}</ul>}</div>))}
+{exp.map(e=>(<div class={'it'+(e.featured?' f':'')}><h3>{e.role}</h3>{e.url?<a class="org" href={e.url} target="_blank" rel="noopener">{e.org}</a>:<div class="org">{e.org}</div>}<div class="d">{e.dates}</div>{e.pts.length>0&&<ul>{e.pts.map(p=><li>{p}</li>)}</ul>}</div>))}
 </div>
 <details><summary>Earlier experience</summary><div class="tl" style="margin-top:14px">
 {earlier.map(e=>(<div class="it"><h3>{e[0]}{e[1]&&<span class="org"> · {e[1]}</span>}</h3><div class="d">{e[2]}</div>{e[3]&&e[3].length>0&&<ul>{e[3].map(p=><li>{p}</li>)}</ul>}</div>))}
