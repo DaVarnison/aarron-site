@@ -24,6 +24,7 @@ const earlier=[
 ];
 const certs=['FEMA IS-242c','FEMA IS-35.25','FEMA IS-912','FEMA IS-453','PISGS Info Seminar'];
 const skills=['Operational Planning','Team Leadership','Team Building','Scheduling & Staffing','Budgeting & Reporting','Risk Management & Safety','Client Communication','Cross-department Coordination'];
+const itskills=['Web Development','JavaScript','HTML & CSS','Git & GitHub','Cloudflare Workers','Base44','Game Modding','Software Engineering'];
 const ld={'@context':'https://schema.org','@type':'Person','@id':'https://aarronwarnagiris.com/#person',name:'Aarron Warnagiris',url:'https://aarronwarnagiris.com/',image:'https://aarronwarnagiris.com/images/headshot-800.jpg',jobTitle:'Director of Major Events & Special Projects',worksFor:{'@type':'Organization',name:'Sentry Event Services, Inc.'},address:{'@type':'PostalAddress',addressLocality:'Wilkes-Barre',addressRegion:'PA',addressCountry:'US'},sameAs:['https://www.linkedin.com/in/aarron-warnagiris-695980262/']};
 const FORM_KEY='6431b466-c9ba-401b-806d-010ab7ec2760';
 const li='https://www.linkedin.com/in/aarron-warnagiris-695980262/';
@@ -47,29 +48,41 @@ const li='https://www.linkedin.com/in/aarron-warnagiris-695980262/';
 <style>
 :root{--bg:#0b1224;--text:#e9ecf7;--mut:#9aa6c7;--a:#8b7bff;--b:#4ea3ff;--glass:rgba(255,255,255,.055);--brd:rgba(255,255,255,.13);--brd-hi:rgba(255,255,255,.24);--sh:0 12px 32px rgba(2,6,20,.4);--inner:inset 0 1px 0 rgba(255,255,255,.14)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);background:radial-gradient(1000px 620px at 88% -6%,rgba(139,123,255,.20),transparent 62%),radial-gradient(820px 520px at -8% 16%,rgba(78,163,255,.15),transparent 60%),radial-gradient(900px 720px at 96% 52%,rgba(139,123,255,.10),transparent 62%),radial-gradient(760px 560px at 4% 88%,rgba(78,163,255,.10),transparent 60%),linear-gradient(180deg,#0b1224,#0a0f22 50%,#0b1224)}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);background:radial-gradient(1100px 700px at 88% -6%,rgba(139,123,255,.22),transparent 62%),radial-gradient(860px 560px at -8% 14%,rgba(78,163,255,.16),transparent 60%),radial-gradient(900px 720px at 96% 48%,rgba(139,123,255,.11),transparent 62%),radial-gradient(820px 620px at 8% 72%,rgba(78,163,255,.11),transparent 60%),radial-gradient(700px 480px at 85% 92%,rgba(168,120,255,.10),transparent 60%),linear-gradient(180deg,#0b1224,#0a0f22 50%,#0b1224)}
+body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
 ::selection{background:rgba(139,123,255,.45);color:#fff}
 a{color:var(--b);text-decoration:none}a:hover{text-decoration:underline}
 .w{max-width:900px;margin:0 auto;padding:0 22px}
-nav{position:sticky;top:0;background:rgba(10,16,38,.55);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,.08);z-index:5}
-nav .w{display:flex;justify-content:space-between;align-items:center;height:56px}
-nav b{letter-spacing:.04em}nav div a{color:var(--mut);margin-left:6px;padding:6px 10px;border-radius:8px;font-size:14px;transition:color .2s ease,background .2s ease}nav div a:hover{color:var(--text);text-decoration:none;background:rgba(255,255,255,.07)}
-.hero{padding:96px 22px 72px}
-.hl{display:flex;align-items:center;justify-content:space-between;gap:40px}
-.pic{width:260px;height:260px;border-radius:50%;object-fit:cover;flex:none;border:3px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,linear-gradient(135deg,var(--a),var(--b)) border-box;box-shadow:0 0 40px rgba(139,123,255,.35),0 0 80px rgba(78,163,255,.18)}
-@media(max-width:700px){.hl{flex-direction:column-reverse;align-items:flex-start;gap:24px}.pic{width:160px;height:160px}}
-.hero h1{font-size:clamp(2.4rem,7vw,4rem);line-height:1.05;margin:0 0 12px;background:linear-gradient(90deg,#fff,#b7aaff 60%,#7cb8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .t{font-size:1.25rem;margin:0}.hero .m{color:var(--mut);margin:6px 0 20px}
-.hero .g{max-width:620px;color:var(--text);background:var(--glass);border:1px solid var(--brd);border-left:3px solid var(--a);border-radius:12px;padding:13px 16px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:var(--inner)}
-.btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 20px;border-radius:14px;background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.04));border:1px solid var(--brd);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 -1px 0 rgba(255,255,255,.06),0 8px 24px rgba(2,6,20,.35);color:var(--text);font-weight:600;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+nav{position:fixed;top:16px;left:0;right:0;z-index:10;display:flex;justify-content:center;pointer-events:none;padding:0 12px}
+.pill{pointer-events:auto;display:flex;align-items:center;gap:4px;padding:6px 8px;border-radius:999px;background:rgba(13,20,44,.55);border:1px solid var(--brd);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 12px 32px rgba(2,6,20,.45)}
+.brand{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:none;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;font-weight:800;font-size:14px;margin-right:6px;box-shadow:0 0 18px rgba(139,123,255,.5)}
+.brand:hover{text-decoration:none}
+.lnks{display:flex;align-items:center;gap:2px}
+.lnks a{color:var(--mut);padding:7px 12px;border-radius:999px;font-size:14px;font-weight:500;transition:color .2s ease,background .2s ease}
+.lnks a:hover{color:var(--text);text-decoration:none;background:rgba(255,255,255,.08)}
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 22px 72px}
+.pic{width:200px;height:200px;border-radius:50%;object-fit:cover;flex:none;border:3px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,linear-gradient(135deg,var(--a),var(--b)) border-box;box-shadow:0 0 50px rgba(139,123,255,.4),0 0 100px rgba(78,163,255,.22)}
+.hero h1{font-size:clamp(2.8rem,8vw,4.8rem);line-height:1.04;margin:28px 0 12px;background:linear-gradient(90deg,#fff,#b7aaff 55%,#7cb8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .t{font-size:1.25rem;margin:0}.hero .m{color:var(--mut);margin:8px 0 0}
+.goal{max-width:640px;margin:30px 0 0;background:var(--glass);border:1px solid var(--brd);border-radius:16px;padding:18px 22px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:var(--inner)}
+.goal p{margin:0}.goal p+p{margin-top:4px}
+.kick{margin:0 0 8px;font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btns{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{position:relative;overflow:hidden;display:inline-block;padding:12px 20px;border-radius:14px;background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.04));border:1px solid var(--brd);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 -1px 0 rgba(255,255,255,.06),0 8px 24px rgba(2,6,20,.35);color:var(--text);font-weight:600;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .6s ease}
 .btn:hover{text-decoration:none;transform:translateY(-2px);border-color:var(--brd-hi);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 12px 32px rgba(2,6,20,.45),0 0 24px rgba(139,123,255,.25)}
+.btn:hover::after{left:130%}
 .btn:active{transform:translateY(0)}
 .btn.p{background:linear-gradient(135deg,rgba(139,123,255,.5),rgba(78,163,255,.45));border:1px solid rgba(183,170,255,.45);color:#fff}
 .btn.p:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 12px 32px rgba(2,6,20,.45),0 0 32px rgba(139,123,255,.45)}
-section{padding:64px 0;position:relative;scroll-margin-top:72px}
+.scroll{margin-top:56px;color:var(--mut);font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;animation:bob 2.4s ease-in-out infinite}
+.scroll:hover{color:var(--text);text-decoration:none}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+section{padding:64px 0;position:relative;scroll-margin-top:84px}
 section::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(139,123,255,.4),rgba(78,163,255,.4),transparent)}
 h2{font-size:1.5rem;margin:0 0 24px}h2::after{content:"";display:block;width:42px;height:3px;margin-top:8px;background:linear-gradient(90deg,var(--a),var(--b));border-radius:3px}
+.sub{margin:0 0 12px;font-size:1rem;font-weight:700}
+.sub:not(:first-of-type){margin-top:28px}
 .tl{border-left:2px solid var(--a);border-image:linear-gradient(180deg,var(--a),var(--b) 55%,rgba(78,163,255,.12)) 1;margin-left:6px;padding-left:24px}
 .it{position:relative;margin-bottom:26px}.it::before{content:"";position:absolute;left:-31px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--a);box-shadow:0 0 12px rgba(139,123,255,.6)}
 .it.f{background:linear-gradient(135deg,rgba(139,123,255,.14),rgba(78,163,255,.08));border:1px solid rgba(139,123,255,.4);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:16px;padding:22px;box-shadow:var(--inner),0 0 36px rgba(139,123,255,.16),var(--sh)}
@@ -80,33 +93,43 @@ ul{margin:8px 0 0;padding-left:20px;color:#cdd3ea}li{margin:3px 0}
 .chips li{margin:0;padding:8px 15px;border-radius:999px;background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:var(--inner);color:var(--text);font-size:.95rem;transition:transform .2s ease,border-color .2s ease}
 .chips li:hover{transform:translateY(-2px);border-color:var(--brd-hi)}
 .chips.top li{background:linear-gradient(135deg,rgba(139,123,255,.18),rgba(78,163,255,.12));border-color:rgba(139,123,255,.4)}
+.chips.blue li{background:linear-gradient(135deg,rgba(78,163,255,.16),rgba(139,123,255,.10));border-color:rgba(78,163,255,.4)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .c{background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:16px;padding:18px;box-shadow:var(--inner),var(--sh);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.c:hover{transform:translateY(-3px);border-color:var(--brd-hi);box-shadow:var(--inner),0 16px 40px rgba(2,6,20,.5),0 0 24px rgba(139,123,255,.12)}.c h3{margin:0 0 4px;font-size:1rem}.c p{margin:0;color:var(--mut);font-size:.92rem}
 .build{margin-top:24px;padding:20px;border-radius:16px;background:linear-gradient(135deg,rgba(139,123,255,.12),rgba(78,163,255,.07));border:1px dashed rgba(139,123,255,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:var(--inner)}
 .cf{display:grid;gap:14px;max-width:560px}.cf label{display:grid;gap:6px;color:var(--mut);font-size:.9rem}
 .cf input,.cf textarea{background:rgba(255,255,255,.05);border:1px solid var(--brd);border-radius:12px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--text);padding:11px 13px;font:inherit;transition:border-color .2s ease,box-shadow .2s ease}
-.cf input:focus,.cf textarea:focus{outline:none;border-color:rgba(139,123,255,.6);box-shadow:0 0 0 3px rgba(139,123,255,.18),0 0 20px rgba(139,123,255,.12)}.cf button{justify-self:start;cursor:pointer;font:inherit;font-weight:600}.cf+.btns{margin-top:28px}
+.cf input:focus,.cf textarea:focus{outline:none;border-color:rgba(139,123,255,.6);box-shadow:0 0 0 3px rgba(139,123,255,.18),0 0 20px rgba(139,123,255,.12)}.cf button{justify-self:start;cursor:pointer;font:inherit;font-weight:600}.cf+.btns{margin-top:28px;justify-content:flex-start}
 details{margin-top:10px}summary{cursor:pointer;color:var(--mut)}
-footer{padding:36px 0;color:var(--mut);font-size:.85rem;text-align:center;position:relative}
-footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(139,123,255,.4),rgba(78,163,255,.4),transparent)}
-@media(max-width:560px){nav div a:nth-child(n+4){display:none}.hero{padding-top:56px}}
+footer{padding:8px 0 40px}
+.foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:20px;padding:28px;box-shadow:var(--inner),var(--sh)}
+.fbrand{display:flex;flex-direction:column;gap:2px}.fbrand b{font-size:1.05rem}.fbrand span{color:var(--mut);font-size:.9rem}
+.flinks{display:flex;flex-direction:column;gap:6px}.flinks a{color:var(--mut);font-size:.95rem}.flinks a:hover{color:var(--text)}
+.fcta{display:flex;flex-direction:column;gap:12px;align-items:flex-start}.fcta .top{color:var(--mut);font-size:.9rem}.fcta .top:hover{color:var(--text)}
+.fbase{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--mut);font-size:.85rem;padding:18px 8px 0}
+html.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+html.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html.js .rv{opacity:1;transform:none;transition:none}.scroll{animation:none}html{scroll-behavior:auto}}
+@media(max-width:700px){.pic{width:160px;height:160px}}
+@media(max-width:560px){.lnks a:nth-child(n+4){display:none}.hero{padding-top:110px}.foot{padding:22px}}
 </style></head><body>
-<nav><div class="w"><b>AW</b><div><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
-<header class="w hero"><div class="hl"><div class="ht">
-<h1>Aarron Warnagiris</h1>
-<p class="t">Director of Major Events &amp; Special Projects · Sentry Event Services, Inc.</p>
-<p class="m">Wilkes-Barre, Pennsylvania</p>
-<p class="g">Goal: start and maintain a career as a full-stack software engineer / developer.</p>
-<div class="btns"><a class="btn p" href={li} target="_blank" rel="noopener">Connect on LinkedIn</a><a class="btn" href="#experience">View experience</a></div></div>
-<img class="pic" src="images/headshot-800.jpg" srcset="images/headshot-400.jpg 400w, images/headshot-800.jpg 800w" sizes="(max-width:700px) 160px, 260px" width="260" height="260" alt="Portrait of Aarron Warnagiris in a suit" fetchpriority="high">
-</div></header>
+<nav><div class="pill"><a class="brand" href="#top">AW</a><div class="lnks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+<header id="top" class="w hero">
+<img class="pic rv" src="images/headshot-800.jpg" srcset="images/headshot-400.jpg 400w, images/headshot-800.jpg 800w" sizes="(max-width:700px) 160px, 200px" width="200" height="200" alt="Portrait of Aarron Warnagiris in a suit" fetchpriority="high">
+<h1 class="rv">Aarron Warnagiris</h1>
+<p class="t rv">Director of Major Events &amp; Special Projects · Sentry Event Services, Inc.</p>
+<p class="m rv">Wilkes-Barre, Pennsylvania</p>
+<div class="goal rv"><p class="kick">The goal</p><p>Start and maintain a career as a full-stack software engineer / developer.</p></div>
+<div class="btns rv"><a class="btn p" href={li} target="_blank" rel="noopener">Connect on LinkedIn</a><a class="btn" href="#experience">View experience</a></div>
+<a class="scroll rv" href="#about">Scroll ↓</a>
+</header>
 <main class="w">
-<section id="about"><h2>About</h2>
+<section id="about" class="rv"><p class="kick">The short version</p><h2>About</h2>
 <p>I lead large-scale event operations as Director of Major Events &amp; Special Projects at Sentry Event Services, Inc., with a background that runs from the floor of live events up through operations management.</p>
 <p>I'm constantly on the move to grow and expand my skill set, and I welcome advice. Alongside my day job I'm studying Computer Software Engineering through Coursera (since July 2025) with the goal of building a career as a full-stack software engineer.</p>
-<div class="build"><b>Building</b> — games, mods, apps and websites under my creator and studio name, Varnison.</div>
+<div class="build"><b>Building</b> — games, mods, apps and websites.</div>
 </section>
-<section id="experience"><h2>Experience</h2>
+<section id="experience" class="rv"><p class="kick">The road so far</p><h2>Experience</h2>
 <div class="tl">
 {exp.map(e=>(<div class={'it'+(e.featured?' f':'')}><h3>{e.role}</h3><div class="org">{e.org}</div><div class="d">{e.dates}</div>{e.pts.length>0&&<ul>{e.pts.map(p=><li>{p}</li>)}</ul>}</div>))}
 </div>
@@ -114,17 +137,20 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 {earlier.map(e=>(<div class="it"><h3>{e[0]}{e[1]&&<span class="org"> · {e[1]}</span>}</h3><div class="d">{e[2]}</div></div>))}
 </div></details>
 </section>
-<section id="skills"><h2>Skills</h2>
+<section id="skills" class="rv"><p class="kick">What I bring</p><h2>Skills</h2>
+<h3 class="sub">Operations &amp; Leadership</h3>
 <ul class="chips top">{skills.map(s=><li>{s}</li>)}</ul>
+<h3 class="sub">IT &amp; Development</h3>
+<ul class="chips blue">{itskills.map(s=><li>{s}</li>)}</ul>
 </section>
-<section id="certs"><h2>Certifications</h2>
+<section id="certs" class="rv"><p class="kick">Paperwork</p><h2>Certifications</h2>
 <ul class="chips">{certs.map(c=><li>{c}</li>)}</ul></section>
-<section id="education"><h2>Education</h2><div class="grid">
-<div class="c"><h3>Computer Software Engineering</h3><p>Coursera · since July 2025</p></div>
-<div class="c"><h3>High School Diploma</h3><p>James M. Coughlin Jr/Sr High School</p></div>
-<div class="c"><h3>Diesel Mechanics Technology</h3><p>Wilkes-Barre Area Career &amp; Technical Center</p></div>
+<section id="education" class="rv"><p class="kick">Learning</p><h2>Education</h2><div class="grid">
+<div class="c rv"><h3>Computer Software Engineering</h3><p>Coursera · since July 2025</p></div>
+<div class="c rv"><h3>High School Diploma</h3><p>James M. Coughlin Jr/Sr High School</p></div>
+<div class="c rv"><h3>Diesel Mechanics Technology</h3><p>Wilkes-Barre Area Career &amp; Technical Center</p></div>
 </div></section>
-<section id="contact"><h2>Contact</h2>
+<section id="contact" class="rv"><p class="kick">Say hello</p><h2>Contact</h2>
 <p>Send me a message below, or reach out on LinkedIn.</p>
 <form id="cf" class="cf" action="https://api.web3forms.com/submit" method="POST">
 <input type="hidden" name="access_key" value={FORM_KEY}>
@@ -144,5 +170,14 @@ try{const r=await fetch(f.action,{method:'POST',headers:{Accept:'application/jso
 <div class="btns"><a class="btn" href={li} target="_blank" rel="noopener">LinkedIn</a></div>
 </section>
 </main>
-<footer>© {new Date().getFullYear()} Aarron Warnagiris</footer>
+<footer class="rv"><div class="w"><div class="foot">
+<div class="fbrand"><b>Aarron Warnagiris</b><span>Director of Major Events &amp; Special Projects</span><span>Wilkes-Barre, Pennsylvania</span></div>
+<div class="flinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+<div class="fcta"><a class="btn" href={li} target="_blank" rel="noopener">LinkedIn</a><a class="top" href="#top">Back to top ↑</a></div>
+</div><div class="fbase"><span>© {new Date().getFullYear()} Aarron Warnagiris</span><span>aarronwarnagiris.com</span></div></div></footer>
+<script is:inline>
+document.documentElement.classList.add('js');
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
 </body></html>
