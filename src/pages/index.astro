@@ -1,6 +1,6 @@
 ---
 const exp = [
- {role:'Director of Major Events',org:'Sentry Event Services, Inc.',url:'https://sentryeventservices.com',dates:'Dec 2025 – Present',featured:true,pts:[
+ {role:'Director of Major Events & Special Projects',org:'Sentry Event Services, Inc.',url:'https://sentryeventservices.com',dates:'Dec 2025 – Present',featured:true,pts:[
   'Oversee, coordinate and perform all major event operations company-wide.',
   'Oversee company IT, logistics and fleet operations supporting major events.',
   'Lead Senior Managers for each major event category.',
@@ -15,23 +15,36 @@ const exp = [
   'Budgeting, staffing and post-event spreadsheet analysis and reporting.',
   'Client communication, team leadership and on-site operations.',
   'Interdepartmental coordination, risk management and safety, and post-event evaluation.']},
- {role:'PA Operations Manager',org:'BCM Security Services, Inc.',dates:'Jun 2022 – Nov 2025',pts:['Same operations, staffing, payroll, reporting and client-facing duties across Pennsylvania events.']},
+ {role:'PA Operations Manager',org:'BCM Security Services, Inc.',dates:'Jan 2023 – Jan 2025',pts:['Managed operations, staffing, payroll, reporting and client communication for Pennsylvania events.']},
  {role:'Operations Coordinator',org:'BCM Security Services, Inc.',dates:'Jun 2022 – Jan 2023',pts:['Coordinated scheduling, staffing and on-site support for event operations.']},
  {role:'Supervisor',org:'BCM Security Services, Inc.',dates:'May 2022 – Jun 2022',pts:['Supervised staff, issued and tracked breaks, and deployed staff to posts.']},
  {role:'Event Staff / Security',org:'BCM Security Services, Inc.',dates:'Jun 2021 – May 2022',pts:['Guest services and security roles including access control, crowd control, stage security and asset protection.']},
 ];
 const earlier=[
+ ['Team Member','Johnny Rockets','2020',['Prepared burgers, fries and shakes to order.','Served guests in the dining room and at the counter.','Handled payments and kept the workspace clean and stocked.']],
  ['Diesel Technician','McCarthy Tire Service','Apr 2019 – Dec 2019',['Serviced and repaired diesel trucks, including brakes, suspension and drivetrain work.','Mounted, balanced and repaired commercial tires.','Performed preventive maintenance and safety inspections.']],
  ['Diesel Technician','Commonwealth Equipment Corp','Jun 2018 – Jan 2019',['Maintained and repaired heavy diesel equipment.','Diagnosed engine, hydraulic and electrical faults.','Completed scheduled preventive maintenance and kept service records.']],
  ['Food Service Worker','Taco Bell','May 2017 – Apr 2018',['Prepared food to order in a fast-paced kitchen.','Served customers at the counter and drive-thru.','Handled cash and card payments and kept the station clean and stocked.']],
- ['Team Member','Johnny Rockets','2020',['Prepared burgers, fries and shakes to order.','Served guests in the dining room and at the counter.','Handled payments and kept the workspace clean and stocked.']],
 ];
-const certs=['FEMA IS-242c','FEMA IS-35.25','FEMA IS-912','FEMA IS-453','PISGS Info Seminar'];
+const certs=[
+ ['Effective Communication','FEMA IS-242.c'],
+ ['FEMA Safety Orientation 2025','FEMA IS-35.25'],
+ ['Retail Security Awareness: Understanding the Hidden Hazards','FEMA IS-912'],
+ ['Introduction to Homeland Security Planning','FEMA IS-453'],
+ ['PISGS Info Seminar',''],
+];
+const gh='https://github.com/DaVarnison';
+const projects=[
+ {name:'sentryeventservices.com',desc:'Company website for Sentry Event Services, Inc. Version 1 launched in late 2026.',url:'https://sentryeventservices.com'},
+ {name:'vorbixstudios.com',desc:'Coming-soon site for Vorbix Studios, built with Astro and deployed to GitHub Pages.',url:'https://vorbixstudios.com',code:gh+'/vorbix-site'},
+ {name:'varnison.com',desc:'My gaming and content site: Astro, a browser-based CMS, and an hourly job that pulls in new YouTube uploads.',url:'https://varnison.com',code:gh+'/varnison-site'},
+ {name:'aarronwarnagiris.com',desc:'This portfolio: a single Astro page with a strict Content-Security-Policy.',url:'https://aarronwarnagiris.com',code:gh+'/aarron-site'},
+];
 const skills=['Operational Planning','Team Leadership','Team Building','Scheduling & Staffing','Budgeting & Reporting','Risk Management & Safety','Client Communication','Cross-department Coordination'];
 const eventskills=['Event Security','Guest Services','Parking Operations'];
-const itskills=['Web Development','JavaScript','HTML & CSS','Git & GitHub','Cloudflare Workers','Base44','Game Modding','Software Engineering'];
+const itskills=['Web Development','JavaScript','HTML & CSS','Git & GitHub','Cloudflare Workers','Base44','Game Modding'];
 const tradeskills=['Diesel Engine Repair','Vehicle Diagnostics','Tire Service & Repair','Preventive Maintenance','Food Preparation','Customer Service','Cash Handling','Fast-Paced Teamwork'];
-const ld={'@context':'https://schema.org','@type':'Person','@id':'https://aarronwarnagiris.com/#person',name:'Aarron Warnagiris',url:'https://aarronwarnagiris.com/',image:'https://aarronwarnagiris.com/images/headshot-800.jpg',jobTitle:'Director of Major Events & Special Projects',worksFor:{'@type':'Organization',name:'Sentry Event Services, Inc.'},address:{'@type':'PostalAddress',addressLocality:'Wilkes-Barre',addressRegion:'PA',addressCountry:'US'},sameAs:['https://www.linkedin.com/in/aarron-warnagiris-695980262/']};
+const ld={'@context':'https://schema.org','@type':'Person','@id':'https://aarronwarnagiris.com/#person',name:'Aarron Warnagiris',url:'https://aarronwarnagiris.com/',image:'https://aarronwarnagiris.com/images/headshot-800.jpg',jobTitle:'Director of Major Events & Special Projects',worksFor:{'@type':'Organization',name:'Sentry Event Services, Inc.'},address:{'@type':'PostalAddress',addressLocality:'Wilkes-Barre',addressRegion:'PA',addressCountry:'US'},sameAs:['https://www.linkedin.com/in/aarron-warnagiris-695980262/','https://github.com/DaVarnison']};
 const li='https://www.linkedin.com/in/aarron-warnagiris-695980262/';
 ---
 <!doctype html>
@@ -101,6 +114,7 @@ ul{margin:8px 0 0;padding-left:20px;color:#cdd3ea}li{margin:3px 0}
 .chips.blue li{background:linear-gradient(135deg,rgba(78,163,255,.16),rgba(139,123,255,.10));border-color:rgba(78,163,255,.4)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .c{background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:16px;padding:18px;box-shadow:var(--inner),var(--sh);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.c:hover{transform:translateY(-3px);border-color:var(--brd-hi);box-shadow:var(--inner),0 16px 40px rgba(2,6,20,.5),0 0 24px rgba(139,123,255,.12)}.c h3{margin:0 0 4px;font-size:1rem}.c p{margin:0;color:var(--mut);font-size:.92rem}
+.c .pl{margin-top:10px;display:flex;gap:16px}.more{margin:16px 0 0;color:var(--mut)}
 details{margin-top:10px}summary{cursor:pointer;color:var(--mut)}
 footer{padding:8px 0 40px}
 .foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:20px;padding:28px;box-shadow:var(--inner),var(--sh)}
@@ -114,14 +128,14 @@ html.js .rv.in{opacity:1;transform:none}
 @media(max-width:700px){.pic{width:160px;height:160px}}
 @media(max-width:560px){.lnks a:nth-child(n+4){display:none}.hero{padding-top:110px}.foot{padding:22px}}
 </style></head><body>
-<nav><div class="pill"><a class="brand" href="#top">AW</a><div class="lnks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a></div></div></nav>
+<nav><div class="pill"><a class="brand" href="#top">AW</a><div class="lnks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></div></div></nav>
 <header id="top" class="w hero">
-<img class="pic rv" src="images/headshot-800.jpg" srcset="images/headshot-400.jpg 400w, images/headshot-800.jpg 800w" sizes="(max-width:700px) 160px, 200px" width="200" height="200" alt="Portrait of Aarron Warnagiris in a suit" fetchpriority="high">
+<img class="pic rv" src="/images/headshot-800.jpg" srcset="/images/headshot-400.jpg 400w, /images/headshot-800.jpg 800w" sizes="(max-width:700px) 160px, 200px" width="200" height="200" alt="Portrait of Aarron Warnagiris in a suit" fetchpriority="high">
 <h1 class="rv">Aarron Warnagiris</h1>
 <p class="t2 rv">Founder · Vorbix Studios</p>
 <p class="t rv">Director of Major Events &amp; Special Projects · Sentry Event Services, Inc.</p>
 <p class="m rv">Wilkes-Barre, Pennsylvania</p>
-<div class="btns rv"><a class="btn p" href={li} target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+<div class="btns rv"><a class="btn p" href={li} target="_blank" rel="noopener">Connect on LinkedIn</a><a class="btn" href={gh} target="_blank" rel="noopener">GitHub</a></div>
 <a class="scroll rv" href="#about">Scroll ↓</a>
 </header>
 <main class="w">
@@ -138,6 +152,9 @@ html.js .rv.in{opacity:1;transform:none}
 {earlier.map(e=>(<div class="it"><h3>{e[0]}{e[1]&&<span class="org"> · {e[1]}</span>}</h3><div class="d">{e[2]}</div>{e[3]&&e[3].length>0&&<ul>{e[3].map(p=><li>{p}</li>)}</ul>}</div>))}
 </div></details>
 </section>
+<section id="projects" class="rv"><p class="kick">What I've built</p><h2>Projects</h2><div class="grid">
+{projects.map(p=>(<div class="c"><h3>{p.name}</h3><p>{p.desc}</p><p class="pl"><a href={p.url} target="_blank" rel="noopener">Visit site</a>{p.code&&<a href={p.code} target="_blank" rel="noopener">Source</a>}</p></div>))}
+</div><p class="more">More on <a href={gh} target="_blank" rel="noopener">GitHub</a>.</p></section>
 <section id="skills" class="rv"><p class="kick">What I bring</p><h2>Skills</h2>
 <h3 class="sub">Operations &amp; Leadership</h3>
 <ul class="chips top">{skills.map(s=><li>{s}</li>)}</ul>
@@ -148,8 +165,9 @@ html.js .rv.in{opacity:1;transform:none}
 <h3 class="sub">Trades &amp; Service</h3>
 <ul class="chips">{tradeskills.map(s=><li>{s}</li>)}</ul>
 </section>
-<section id="certs" class="rv"><p class="kick">Paperwork</p><h2>Certifications</h2>
-<ul class="chips">{certs.map(c=><li>{c}</li>)}</ul></section>
+<section id="certs" class="rv"><p class="kick">Training</p><h2>Certifications</h2><div class="grid">
+{certs.map(c=>(<div class="c"><h3>{c[0]}</h3>{c[1]&&<p>{c[1]}</p>}</div>))}
+</div></section>
 <section id="education" class="rv"><p class="kick">Learning</p><h2>Education</h2><div class="grid">
 <div class="c rv"><h3>Computer Software Engineering</h3><p>Coursera · since July 2025</p></div>
 <div class="c rv"><h3>High School Diploma</h3><p>James M. Coughlin Jr/Sr High School</p></div>
@@ -158,8 +176,8 @@ html.js .rv.in{opacity:1;transform:none}
 </main>
 <footer class="rv"><div class="w"><div class="foot">
 <div class="fbrand"><b>Aarron Warnagiris</b><span>Director of Major Events &amp; Special Projects</span><span>Wilkes-Barre, Pennsylvania</span></div>
-<div class="flinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a></div>
-<div class="fcta"><a class="btn" href={li} target="_blank" rel="noopener">LinkedIn</a><a class="top" href="#top">Back to top ↑</a></div>
-</div><div class="fbase"><span>© {new Date().getFullYear()} Aarron Warnagiris</span><span>aarronwarnagiris.com</span></div></div></footer>
+<div class="flinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></div>
+<div class="fcta"><a class="btn" href={li} target="_blank" rel="noopener">LinkedIn</a><a class="btn" href={gh} target="_blank" rel="noopener">GitHub</a><a class="top" href="#top">Back to top ↑</a></div>
+</div><div class="fbase"><span>© {new Date().getFullYear()} Aarron Warnagiris</span><span>Built by <a href="https://vorbixstudios.com" target="_blank" rel="noopener">Vorbix Studios</a></span></div></div></footer>
 <script src="/site.js" defer></script>
 </body></html>
