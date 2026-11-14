@@ -7,7 +7,7 @@ const exp = [
   'Ensure operational consistency, policy compliance, accurate scheduling, and timely payroll and billing submission.',
   'Serve as key liaison between internal departments and clients.',
   'Accountable for staffing, leadership coverage and operational execution.']},
- {role:'Founder',org:'Vorbix Studios',dates:'Nov 2026 – Present',pts:[
+ {role:'Founder',org:'Vorbix Studios',dates:'Nov 2026 – Present',featured:true,pts:[
   'Founded in 2026.',
   'Vorbix Studios works on apps, websites, platforms, games and more — striving to improve with every day, every hour, every program.']},
  {role:'Operations Manager',org:'Sentry Event Services, Inc. (formerly BCM Security Services, Inc.)',dates:'Jan 2025 – Dec 2025',pts:[
@@ -31,13 +31,12 @@ const skills=['Operational Planning','Team Leadership','Team Building','Scheduli
 const itskills=['Web Development','JavaScript','HTML & CSS','Git & GitHub','Cloudflare Workers','Base44','Game Modding','Software Engineering'];
 const tradeskills=['Diesel Engine Repair','Vehicle Diagnostics','Tire Service & Repair','Preventive Maintenance','Food Preparation','Customer Service','Cash Handling','Fast-Paced Teamwork'];
 const ld={'@context':'https://schema.org','@type':'Person','@id':'https://aarronwarnagiris.com/#person',name:'Aarron Warnagiris',url:'https://aarronwarnagiris.com/',image:'https://aarronwarnagiris.com/images/headshot-800.jpg',jobTitle:'Director of Major Events & Special Projects',worksFor:{'@type':'Organization',name:'Sentry Event Services, Inc.'},address:{'@type':'PostalAddress',addressLocality:'Wilkes-Barre',addressRegion:'PA',addressCountry:'US'},sameAs:['https://www.linkedin.com/in/aarron-warnagiris-695980262/']};
-const FORM_KEY='6431b466-c9ba-401b-806d-010ab7ec2760';
 const li='https://www.linkedin.com/in/aarron-warnagiris-695980262/';
 ---
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Aarron Warnagiris — Director of Major Events &amp; Aspiring Software Engineer</title>
 <meta name="description" content="Aarron Warnagiris: Director of Major Events & Special Projects at Sentry Event Services, studying Computer Software Engineering, building toward a full-stack developer career.">
@@ -101,9 +100,6 @@ ul{margin:8px 0 0;padding-left:20px;color:#cdd3ea}li{margin:3px 0}
 .chips.blue li{background:linear-gradient(135deg,rgba(78,163,255,.16),rgba(139,123,255,.10));border-color:rgba(78,163,255,.4)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .c{background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:16px;padding:18px;box-shadow:var(--inner),var(--sh);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.c:hover{transform:translateY(-3px);border-color:var(--brd-hi);box-shadow:var(--inner),0 16px 40px rgba(2,6,20,.5),0 0 24px rgba(139,123,255,.12)}.c h3{margin:0 0 4px;font-size:1rem}.c p{margin:0;color:var(--mut);font-size:.92rem}
-.cf{display:grid;gap:14px;max-width:560px}.cf label{display:grid;gap:6px;color:var(--mut);font-size:.9rem}
-.cf input,.cf textarea{background:rgba(255,255,255,.05);border:1px solid var(--brd);border-radius:12px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--text);padding:11px 13px;font:inherit;transition:border-color .2s ease,box-shadow .2s ease}
-.cf input:focus,.cf textarea:focus{outline:none;border-color:rgba(139,123,255,.6);box-shadow:0 0 0 3px rgba(139,123,255,.18),0 0 20px rgba(139,123,255,.12)}.cf button{justify-self:start;cursor:pointer;font:inherit;font-weight:600}.cf+.btns{margin-top:28px;justify-content:flex-start}
 details{margin-top:10px}summary{cursor:pointer;color:var(--mut)}
 footer{padding:8px 0 40px}
 .foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:20px;padding:28px;box-shadow:var(--inner),var(--sh)}
@@ -117,7 +113,7 @@ html.js .rv.in{opacity:1;transform:none}
 @media(max-width:700px){.pic{width:160px;height:160px}}
 @media(max-width:560px){.lnks a:nth-child(n+4){display:none}.hero{padding-top:110px}.foot{padding:22px}}
 </style></head><body>
-<nav><div class="pill"><a class="brand" href="#top">AW</a><div class="lnks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="pill"><a class="brand" href="#top">AW</a><div class="lnks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a></div></div></nav>
 <header id="top" class="w hero">
 <img class="pic rv" src="images/headshot-800.jpg" srcset="images/headshot-400.jpg 400w, images/headshot-800.jpg 800w" sizes="(max-width:700px) 160px, 200px" width="200" height="200" alt="Portrait of Aarron Warnagiris in a suit" fetchpriority="high">
 <h1 class="rv">Aarron Warnagiris</h1>
@@ -155,25 +151,10 @@ html.js .rv.in{opacity:1;transform:none}
 <div class="c rv"><h3>High School Diploma</h3><p>James M. Coughlin Jr/Sr High School</p></div>
 <div class="c rv"><h3>Diesel Mechanics Technology</h3><p>Wilkes-Barre Area Career &amp; Technical Center</p></div>
 </div></section>
-<section id="contact" class="rv"><p class="kick">Say hello</p><h2>Contact</h2>
-<p>Send me a message below, or reach out on LinkedIn.</p>
-<form id="cf" class="cf" action="https://api.web3forms.com/submit" method="POST">
-<input type="hidden" name="access_key" value={FORM_KEY}>
-<input type="hidden" name="subject" value="New message from aarronwarnagiris.com">
-<input type="hidden" name="from_name" value="aarronwarnagiris.com">
-<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
-<label>Name<input name="name" required maxlength="100" autocomplete="name"></label>
-<label>Email<input type="email" name="email" required maxlength="150" autocomplete="email"></label>
-<label>Message<textarea name="message" required rows="5" maxlength="3000"></textarea></label>
-<button class="btn p" type="submit">Send message</button>
-<p id="cs" role="status" class="d"></p>
-</form>
-<div class="btns"><a class="btn" href={li} target="_blank" rel="noopener">LinkedIn</a></div>
-</section>
 </main>
 <footer class="rv"><div class="w"><div class="foot">
 <div class="fbrand"><b>Aarron Warnagiris</b><span>Director of Major Events &amp; Special Projects</span><span>Wilkes-Barre, Pennsylvania</span></div>
-<div class="flinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+<div class="flinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a></div>
 <div class="fcta"><a class="btn" href={li} target="_blank" rel="noopener">LinkedIn</a><a class="top" href="#top">Back to top ↑</a></div>
 </div><div class="fbase"><span>© {new Date().getFullYear()} Aarron Warnagiris</span><span>aarronwarnagiris.com</span></div></div></footer>
 <script src="/site.js" defer></script>
