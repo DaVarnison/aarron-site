@@ -27,11 +27,21 @@ const earlier=[
  ['Food Service Worker','Taco Bell','May 2017 – Apr 2018',['Prepared food to order in a fast-paced kitchen.','Served customers at the counter and drive-thru.','Handled cash and card payments and kept the station clean and stocked.']],
 ];
 const certs=[
- ['Effective Communication','FEMA IS-242.c'],
- ['FEMA Safety Orientation 2025','FEMA IS-35.25'],
- ['Retail Security Awareness: Understanding the Hidden Hazards','FEMA IS-912'],
- ['Introduction to Homeland Security Planning','FEMA IS-453'],
- ['PISGS Info Seminar',''],
+ ['Evolv Express Tablet Administration (Version 7.0)','Evolv Technology',''],
+ ['Evolv Express Basic Operations Course (All Versions)','Evolv Technology · EXPR-ALL-100',''],
+ ['Evolv Express Operations in Sports and Entertainment Environments','Evolv Technology',''],
+ ['Traffic Control and Flagging','360training','Traffic Control · Flagging'],
+ ['PISGS Info Seminar','PISGS','Ohio Security License Protocol'],
+ ['Effective Communication','FEMA IS-242.c',''],
+ ['Leadership and Influence','FEMA IS-240.c',''],
+ ['Decision-Making, Problem Solving','FEMA IS-241.c',''],
+ ['FEMA Safety Orientation 2025','FEMA IS-35.25',''],
+ ['Retail Security Awareness: Understanding the Hidden Hazards','FEMA IS-912',''],
+ ['Active Shooter Prevention','FEMA IS-904',''],
+ ['Responding to an Active Shooter','FEMA IS-905',''],
+ ['Basic Workplace Security Awareness','FEMA IS-906',''],
+ ['Active Shooter','FEMA IS-907',''],
+ ['Introduction to Homeland Security Planning','FEMA IS-453',''],
 ];
 const gh='https://github.com/DaVarnison';
 const projects=[
@@ -113,7 +123,7 @@ ul{margin:8px 0 0;padding-left:20px;color:#cdd3ea}li{margin:3px 0}
 .chips.top li{background:linear-gradient(135deg,rgba(139,123,255,.18),rgba(78,163,255,.12));border-color:rgba(139,123,255,.4)}
 .chips.blue li{background:linear-gradient(135deg,rgba(78,163,255,.16),rgba(139,123,255,.10));border-color:rgba(78,163,255,.4)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-.c{background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:16px;padding:18px;box-shadow:var(--inner),var(--sh);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.c:hover{transform:translateY(-3px);border-color:var(--brd-hi);box-shadow:var(--inner),0 16px 40px rgba(2,6,20,.5),0 0 24px rgba(139,123,255,.12)}.c h3{margin:0 0 4px;font-size:1rem}.c p{margin:0;color:var(--mut);font-size:.92rem}
+.c{background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:16px;padding:18px;box-shadow:var(--inner),var(--sh);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.c:hover{transform:translateY(-3px);border-color:var(--brd-hi);box-shadow:var(--inner),0 16px 40px rgba(2,6,20,.5),0 0 24px rgba(139,123,255,.12)}.c h3{margin:0 0 4px;font-size:1rem}.c p{margin:0;color:var(--mut);font-size:.92rem}.c p.sk{margin-top:6px;font-size:.85rem}
 .c .pl{margin-top:10px;display:flex;gap:16px}.more{margin:16px 0 0;color:var(--mut)}
 details{margin-top:10px}summary{cursor:pointer;color:var(--mut)}
 footer{padding:8px 0 40px}
@@ -165,7 +175,7 @@ html.js .rv.in{opacity:1;transform:none}
 <ul class="chips">{tradeskills.map(s=><li>{s}</li>)}</ul>
 </section>
 <section id="certs" class="rv"><p class="kick">Training</p><h2>Certifications</h2><div class="grid">
-{certs.map(c=>(<div class="c"><h3>{c[0]}</h3>{c[1]&&<p>{c[1]}</p>}</div>))}
+{certs.map(c=>(<div class="c"><h3>{c[0]}</h3>{c[1]&&<p>{c[1]}</p>}{c[2]&&<p class="sk">Skills: {c[2]}</p>}</div>))}
 </div></section>
 <section id="education" class="rv"><p class="kick">Learning</p><h2>Education</h2><div class="grid">
 <div class="c rv"><h3>Computer Software Engineering</h3><p>Coursera · since July 2025</p></div>
