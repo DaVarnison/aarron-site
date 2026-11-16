@@ -119,9 +119,8 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut)}
 footer{padding:8px 0 40px}
 .foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;background:var(--glass);border:1px solid var(--brd);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:20px;padding:28px;box-shadow:var(--inner),var(--sh)}
 .fbrand{display:flex;flex-direction:column;gap:2px}.fbrand b{font-size:1.05rem}.fbrand span{color:var(--mut);font-size:.9rem}
-.flinks{display:flex;flex-direction:column;gap:6px}.flinks a{color:var(--mut);font-size:.95rem}.flinks a:hover{color:var(--text)}
-.fcta{display:flex;flex-direction:column;gap:12px;align-items:flex-start}.fcta .top{color:var(--mut);font-size:.9rem}.fcta .top:hover{color:var(--text)}
-.fbase{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--mut);font-size:.85rem;padding:18px 8px 0}
+.fcta{display:flex;flex-direction:row;gap:12px;align-items:center;flex-wrap:wrap}
+.fbase{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;color:var(--mut);font-size:.85rem;padding:18px 8px 0}.fbase span:last-child{justify-self:end}.fbase .top{color:var(--mut)}.fbase .top:hover{color:var(--text)}
 html.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 html.js .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){html.js .rv{opacity:1;transform:none;transition:none}.scroll{animation:none}html{scroll-behavior:auto}}
@@ -176,8 +175,7 @@ html.js .rv.in{opacity:1;transform:none}
 </main>
 <footer class="rv"><div class="w"><div class="foot">
 <div class="fbrand"><b>Aarron Warnagiris</b><span>Wilkes-Barre, Pennsylvania</span></div>
-<div class="flinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></div>
-<div class="fcta"><a class="btn" href={li} target="_blank" rel="noopener">LinkedIn</a><a class="btn" href={gh} target="_blank" rel="noopener">GitHub</a><a class="top" href="#top">Back to top ↑</a></div>
-</div><div class="fbase"><span>© {new Date().getFullYear()} Aarron Warnagiris</span><span>Built by <a href="https://vorbixstudios.com" target="_blank" rel="noopener">Vorbix Studios</a></span></div></div></footer>
+<div class="fcta"><a class="btn" href={li} target="_blank" rel="noopener">LinkedIn</a><a class="btn" href={gh} target="_blank" rel="noopener">GitHub</a></div>
+</div><div class="fbase"><span>© {new Date().getFullYear()} Aarron Warnagiris</span><a class="top" href="#top">Back to top ↑</a><span>Built by <a href="https://vorbixstudios.com" target="_blank" rel="noopener">Vorbix Studios</a></span></div></div></footer>
 <script src="/site.js" defer></script>
 </body></html>
